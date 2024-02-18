@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navigation {
+    /*margin-top: 25px;*/
+    /*height: 74px;*/
+    /* background-color: red;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    margin:0px 10px;
+}
+
+.nav-left {
+    display: flex;
+}
+
+.nav-left span {
+    font-size: 35px;
+    padding-top: 10px;
+    
+}
+.nav-left ul {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    margin: 0 77px;
+
+}
+
+.nav-left ul li {
+    list-style: none;
+    margin: 0 14px;
+    transition: all 0.3s ease-in-out;
+
+}
+.nav-btn {
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    border-radius: 30px;
+    color: black;
+    background: linear-gradient(to top, #cc33ff 19%, #9966ff 84%);
+    width: 84px;
+    height: 35px;
+}
+.nav-btn:hover {
+    background: linear-gradient(to top, #ff66ff 19%, #9966ff 84%);
+}
+.nav-right {
+    padding: 0px 5px;
+    padding-top: 3px;
+    font-size: 16px;
+    border-radius: 4px;
+    margin: 0 13px;
+}
+
+body{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    background: url('../img/bg.png');
+    background-size: cover;
+    background-position: center;
+    font-family: 'roboto', sans-serif;
+}
+
+.container{
+    position: relative;
+    width: 90%;
+    height: 87vh;
+    border: 5px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logout{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background: none;
+    text-decoration: underline;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+.greeting{
+    font-family: 'dosis';
+    font-size: 100px;
+    color: #fff;
+    font-weight: 800;
+}

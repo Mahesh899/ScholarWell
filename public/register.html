@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+
+    <link rel="stylesheet" href="css/form.css">
+
+</head>
+<body>
+
+    <div class="alert-box">
+        <p class="alert"></p>
+    </div>
+
+    <div class="form">
+        <h1 class="heading">Register</h1>
+        <input type="text" placeholder="Name" autocomplete="off" class="name" required>
+        <input type="email" placeholder="Email" autocomplete="off" class="email" required>
+        <input type="tel" placeholder="Contact Number" autocomplete="off" class="mobile" name="mobile" required>
+        <input type="number" placeholder="Age" class="age" name="age" min="16" max="50" required>
+        <select placeholder="Gender" class="gender" name="gender" required>
+            <option value="">Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+        <input type="password" placeholder="Password" autocomplete="off" class="password" required>
+        <button class="submit-btn">Register</button>
+        <a href="login.html" class="link">already have an account ? Log in here</a>
+    </div>
+
+    <script src="js/form.js"></script>
+    
+</body>
+</html>
