@@ -7,7 +7,7 @@ form.forEach((item, i) => {
         item.style.opacity = 1;
     }, i*100);
 })
-
+ 
 window.onload = () => {
     if(sessionStorage.name){
         location.href = '/';

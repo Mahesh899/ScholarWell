@@ -14,3 +14,4 @@ logOut.onclick = () => {
     sessionStorage.clear();
     location.reload();
 }
+ 
