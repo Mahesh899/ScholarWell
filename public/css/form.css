@@ -37,7 +37,7 @@ body{
     margin-bottom: 50px;
 }
 
-input,.submit-btn,select,option{
+input,.submit-btn{
     opacity: 0;
     width: 80%;
     height: 35px;
@@ -103,4 +103,21 @@ input:focus::placeholder{
     font-family: 'roboto', sans-serif;
     text-align: center;
     transition: 1s;
+}
+.gender {
+    width: 80%;
+    height: 35px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.3);
+    border: none;
+    color: #fff;
+    padding: 10px;
+    transition: .5s;
+    border: 1px solid #ccc;
+}
+.gender option {
+    background-color: rgba(255, 255, 255, 0.3);
+
 }

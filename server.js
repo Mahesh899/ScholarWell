@@ -15,21 +15,21 @@ const db = knex({
 
 const app = express();
 
-let initialPath = path.join(__dirname, "public");
+let intialPath = path.join(__dirname, "public");
 
 app.use(bodyParser.json());
-app.use(express.static(initialPath));
+app.use(express.static(intialPath));
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(initialPath, "home.html"));
+    res.sendFile(path.join(intialPath, "home.html"));
 })
 
 app.get('/login', (req, res) => {
-    res.sendFile(path.join(initialPath, "login.html"));
+    res.sendFile(path.join(intialPath, "login.html"));
 })
 
 app.get('/register', (req, res) => {
-    res.sendFile(path.join(initialPath, "register.html"));
+    res.sendFile(path.join(intialPath, "register.html"));
 })
 
 app.post('/register-user', (req, res) => {
@@ -38,7 +38,7 @@ app.post('/register-user', (req, res) => {
     if(!name.length || !email.length || !password.length){
         res.json('fill all the fields');
     } else{
-        db("users").insert({
+        db("usersinfo").insert({
             name: name,
             email: email,
             password: password
@@ -48,11 +48,9 @@ app.post('/register-user', (req, res) => {
             res.json(data[0])
         })
         .catch(err => {
-        
-            if (err && err.detail && typeof err.detail === 'string' && err.detail.includes('already exists')) {
-                // Your code here
+            if(err.detail.includes('already exists')){
                 res.json('email already exists');
-            } 
+            }
         })
     }
 })
@@ -77,4 +75,4 @@ app.post('/login-user', (req, res) => {
 
 app.listen(3000, (req, res) => {
     console.log('listening on port 3000......')
-}) 
+})
