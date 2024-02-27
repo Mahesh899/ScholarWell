@@ -2,28 +2,32 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: initial;
 }
 .navigation {
     /*margin-top: 25px;*/
     /*height: 74px;*/
-    /* background-color: red;*/
+    background-color: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: transparent;
-    margin:0px 10px;
+    width: auto;
+    height: 65px;
 }
 
 .nav-left {
     display: flex;
+    align-items: center;
+    height: 100%;width: 70%;
 }
 
-.nav-left span {
+.logo {
     font-size: 35px;
     padding-top: 10px;
     
 }
-.nav-left ul {
+.nav-menu{
     display: flex;
     align-items: center;
     font-size: 1.5rem;
@@ -31,11 +35,20 @@
 
 }
 
-.nav-left ul li {
+.nav-menu div {
+    height: 35px;
+    text-decoration: none;
     list-style: none;
     margin: 0 14px;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.001s ease-in-out;
+    display: flex;
+    align-items: center;
 
+}
+.nav-menu a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
 }
 .nav-btn {
     border: none;
@@ -47,18 +60,35 @@
     background: linear-gradient(to top, #cc33ff 19%, #9966ff 84%);
     width: 84px;
     height: 35px;
+    margin-right: 20px;
 }
 .nav-btn:hover {
     background: linear-gradient(to top, #ff66ff 19%, #9966ff 84%);
 }
+.nav-menu div:hover{
+    background: linear-gradient(to top, #ff66ff 19%, #9966ff 84%);
+    border-radius: 30px;
+    color: #f5cc46;
+}
 .nav-right {
+    height: 100%;
+    width: 30%;
     padding: 0px 5px;
     padding-top: 3px;
     font-size: 16px;
     border-radius: 4px;
     margin: 0 13px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
 }
-
+hr{
+    
+    background-color: black;
+    height: 0.5px;
+    border: none;
+    margin: 1rem 0rem;
+}
 body{
     position: relative;
     width: 100%;
@@ -66,7 +96,7 @@ body{
     height: auto;
     justify-content: center;
     align-items: center;
-    background: url('../img/bg.png');
+    /*background: url('../img/bg.png');*/
     background-size: cover;
     background-position: center;
     font-family: 'roboto', sans-serif;
@@ -97,7 +127,6 @@ body{
 }
 
 .greeting{
-    font-family: 'dosis';
     font-size: 100px;
     color: #fff;
     font-weight: 800;
