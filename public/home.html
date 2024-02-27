@@ -1,35 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ScholarWell</title>
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/about.css">
 </head>
+
 <body>
-    <nav class="navigation ">
-        <div class="nav-left">
-            <a href="/">
-                <span><img src="img/ScholarWellLogo.png" width="70px" alt="LOGO"></span>
-            </a>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/#">About</a></li>
-                <li><a href="/contact.html">Contact</a></li>
- 
-            </ul>
-        </div>
-        <div class="nav-right">
-            <button class="nav-btn">SignUp</button>
-            <button class="nav-btn">Login</button>
-        </div>
-        <div class="container">
-            <button class="logout">log out</button>
-            <h1 class="greeting"></h1>
-        </div>
-    
+    <header>
+        <nav class="navigation ">
+            <div class="nav-left">
+                <div class="logo">
+                    <img src="img/ScholarWellLogo.png" width="70px" alt="LOGO">
+                </div>
+                <div class="nav-menu">
+                    <div><a href="/">Home</a></li>
+                    </div>
+                    <div><a href="">Features</a></div>
+                    <div><a href="/about.html">About</a></div>
+                    <div><a href="/contact.html">Contact</a></div>
+                </div>
+            </div>
+            <div class="nav-right">
+                <button class="nav-btn" id="signupBtn">SignUp</button>
+                <button class="nav-btn" id="loginBtn">Login</button>
+
+            </div>
         <script src="js/home.js"></script>
-        
-    </nav>
+
+        </nav>
+    </header>
+    <hr class="decresed">
 </body>
+
 </html>
