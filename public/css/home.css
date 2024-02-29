@@ -1,9 +1,11 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: initial;
+    color: #7d7979;
 }
+
 .navigation {
     /*margin-top: 25px;*/
     /*height: 74px;*/
@@ -19,15 +21,17 @@
 .nav-left {
     display: flex;
     align-items: center;
-    height: 100%;width: 70%;
+    height: 100%;
+    width: 70%;
 }
 
 .logo {
     font-size: 35px;
     padding-top: 10px;
-    
+
 }
-.nav-menu{
+
+.nav-menu {
     display: flex;
     align-items: center;
     font-size: 1.5rem;
@@ -40,36 +44,42 @@
     text-decoration: none;
     list-style: none;
     margin: 0 14px;
-    transition: all 0.001s ease-in-out;
+    transition: all 0.2s ease-in-out;
     display: flex;
     align-items: center;
 
 }
-.nav-menu a{
+
+.nav-menu a {
     text-decoration: none;
-    color: black;
+    color: #787878;
     padding: 10px;
 }
+
 .nav-btn {
     border: none;
     font-size: 1rem;
     cursor: pointer;
     transition: all 0.5s ease-in-out;
     border-radius: 30px;
-    color: black;
+    color: white;
     background: linear-gradient(to top, #cc33ff 19%, #9966ff 84%);
     width: 84px;
     height: 35px;
     margin-right: 20px;
 }
+
 .nav-btn:hover {
     background: linear-gradient(to top, #ff66ff 19%, #9966ff 84%);
+    color: #00e1ff;
 }
-.nav-menu div:hover{
-    background: linear-gradient(to top, #ff66ff 19%, #9966ff 84%);
-    border-radius: 30px;
-    color: #f5cc46;
+
+.nav-menu a:hover {
+    /*background: linear-gradient(to top, #ff66ff 19%, #9966ff 84%);
+    border-radius: 30px;*/
+    color: #00e1ff;
 }
+
 .nav-right {
     height: 100%;
     width: 30%;
@@ -82,14 +92,16 @@
     align-items: center;
     justify-content: end;
 }
-hr{
-    
+
+hr {
+
     background-color: black;
     height: 0.5px;
-    border: none;
+    
     margin: 1rem 0rem;
 }
-body{
+
+body {
     position: relative;
     width: 100%;
     min-height: 100vh;
@@ -102,7 +114,7 @@ body{
     font-family: 'roboto', sans-serif;
 }
 
-.container{
+.container {
     position: relative;
     width: 90%;
     height: 87vh;
@@ -112,7 +124,7 @@ body{
     align-items: center;
 }
 
-.logout{
+.logout {
     position: absolute;
     top: 10px;
     right: 0;
@@ -126,8 +138,155 @@ body{
     border: none;
 }
 
-.greeting{
+.greeting {
     font-size: 100px;
     color: #fff;
     font-weight: 800;
+}
+
+.hero-section {
+    height: auto;
+    width: auto;
+    margin: 1rem 4rem;
+}
+
+.hero1-cont h1 {
+    font-size: 5rem;
+    padding-bottom: 20px;
+}
+
+.hero1-cont p {
+    font-size: 2rem;
+    padding-left: 10px;
+    margin-bottom: 1rem;
+}
+
+.hero1,
+.hero2 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    padding: 0 2rem;
+    border-radius: 30px;
+    /*background-color: #c6fff1;*/
+    margin-bottom: 60px;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.hero1-cont {
+    width: 60%;
+    height: auto;
+}
+
+.hero-started-btn {
+    display: flex;
+    align-items: baseline;
+}
+
+.hero-started-btn p,
+button {
+    margin-right: 2rem;
+}
+
+.hero1-img {
+    width: 40%;
+    height: 50vh;
+}
+
+.hero1-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.hero1-btn {
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    border-radius: 30px;
+    color: #ffff;
+    background: linear-gradient(to top, #cc33ff 19%, #9966ff 84%);
+    width: 100px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+.hero1-btn:hover {
+    background: linear-gradient(to top, #ff66ff 19%, #9966ff 84%);
+    color: #00e1ff;
+}
+
+.hero2-cont h2 {
+    font-size: 5rem;
+    padding-bottom: 20px;
+}
+
+.hero2-cont ul li {
+    font-size: 2rem;
+    padding-left: 10px;
+    margin-bottom: 1rem;
+}
+
+.hero2-cont {
+    width: 60%;
+    height: auto;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.hero2-img {
+    width: 40%;
+    height: 50vh;
+}
+
+.hero2-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.hero4-cont h2 {
+    font-size: 5rem;
+    padding-bottom: 20px;
+}
+
+.hero4-cont p {
+    font-size: 2rem;
+    padding-left: 10px;
+    margin-bottom: 1rem;
+}
+
+.hero4-cont {
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero4-img {
+    width: 40%;
+    height: 50vh;
+}
+
+.hero4-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.hero5-started-btn p,
+button {
+    margin-right: 2rem;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 5vh;
+    /* background-color: red; */
+    align-items: center;
+    font-size: 1.3rem;
 }
